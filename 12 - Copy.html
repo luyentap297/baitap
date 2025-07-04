@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>LUYỆN TẬP</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    textarea { width: 100%; height: 100px; margin-top: 5px; }
+    .question { margin-bottom: 30px; }
+    .result-line { margin-left: 20px; }
+    .correct { color: green; }
+    .incorrect { color: red; }
+    .warning { color: orange; font-style: italic; }
+  </style>
+</head>
+<body>
+
+<h2>LUYỆN TẬP</h2>
+
+<!-- Câu 1 -->
+<div class="question" id="q1">
+  <label><b>Câu 1:</b> Rút tiền gửi ngân hàng nhập quỹ tiền mặt 10.000.000đ:</label>
+  <textarea id="answer1" placeholder="Mỗi dòng 1 công thức..."></textarea>
+  <button onclick="checkAnswer('1')">Kiểm tra</button>
+  <div id="result1"></div>
+</div>
+
+<!-- Câu 2 -->
+<div class="question" id="q2">
+  <label><b>Câu 2:</b> Chi tiền mặt trả lương công nhân viên 15.000.000đ</label>
+  <textarea id="answer2" placeholder="Mỗi dòng 1 công thức..."></textarea>
+  <button onclick="checkAnswer('2')">Kiểm tra</button>
+  <div id="result2"></div>
+</div>
+
+<!-- Câu 3 -->
+<div class="question" id="q3">
+  <label><b>Câu 3:</b> Chi tiền mặt mua vật liệu 5.000.000đ:</label>
+  <textarea id="answer3" placeholder="Mỗi dòng 1 công thức..."></textarea>
+  <button onclick="checkAnswer('3')">Kiểm tra</button>
+  <div id="result3"></div>
+</div>
+<!-- Câu 4 -->
+<div class="question" id="q4">
+  <label><b>Câu 4:</b> Bán hàng thu bằng tiền mặt 25.000.000đ:</label>
+  <textarea id="answer4" placeholder="Mỗi dòng 1 công thức..."></textarea>
+  <button onclick="checkAnswer('4')">Kiểm tra</button>
+  <div id="result4"></div>
+</div>
+<!-- Câu 5 -->
+<div class="question" id="q5">
+  <label><b>Câu 5:</b> Chi tiền mặt trả nợ người bán 10.000.000đ:</label>
+  <textarea id="answer5" placeholder="Mỗi dòng 1 công thức..."></textarea>
+  <button onclick="checkAnswer('5')">Kiểm tra</button>
+  <div id="result5"></div>
+</div>
+<!-- Câu 6 -->
+<div class="question" id="q6">
+  <label><b>Câu 6:</b> Thu nợ khách hàng bằng tiền mặt 8.000.000đ:</label>
+  <textarea id="answer6" placeholder="Mỗi dòng 1 công thức..."></textarea>
+  <button onclick="checkAnswer('6')">Kiểm tra</button>
+  <div id="result6"></div>
+</div>
+
+<!-- Câu 7 -->
+<div class="question" id="q7">
+  <label><b>Câu 7:</b> Dùng tiền mặt trả nợ vay ngắn hạn ngân hàng 24.000.000đ:</label>
+  <textarea id="answer7" placeholder="Mỗi dòng 1 công thức..."></textarea>
+  <button onclick="checkAnswer('7')">Kiểm tra</button>
+  <div id="result7"></div>
+</div>
+<!-- Câu 8 -->
+<div class="question" id="q8">
+  <label><b>Câu 8:</b> Khách hàng trả nợ 10.000.000đ bằng tiền gửi ngân hàng:</label>
+  <textarea id="answer8" placeholder="Mỗi dòng 1 công thức..."></textarea>
+  <button onclick="checkAnswer('8')">Kiểm tra</button>
+  <div id="result8"></div>
+</div>
+<!-- Câu 9 -->
+<div class="question" id="q9">
+  <label><b>Câu 9:</b> Được cấp một tài sản cố định hữu hình nguyên giá 32.000.000đ:</label>
+  <textarea id="answer9" placeholder="Mỗi dòng 1 công thức..."></textarea>
+  <button onclick="checkAnswer('9')">Kiểm tra</button>
+  <div id="result9"></div>
+</div>
+<!-- Câu 10 -->
+<div class="question" id="q10">
+  <label><b>Câu 10:</b> Chi tiền mặt tạm ứng cho nhân viên mua hàng 5.000.000đ:</label>
+  <textarea id="answer10" placeholder="Mỗi dòng 1 công thức..."></textarea>
+  <button onclick="checkAnswer('10')">Kiểm tra</button>
+  <div id="result10"></div>
+</div>
+<!-- Câu 11 -->
+<div class="question" id="q11">
+  <label><b>Câu 11:</b> Mua hàng hóa nhập kho trị giá 20.000.000đ chưa trả tiền người bán:</label>
+  <textarea id="answer11" placeholder="Mỗi dòng 1 công thức..."></textarea>
+  <button onclick="checkAnswer('11')">Kiểm tra</button>
+  <div id="result11"></div>
+</div>
+
+<!-- Câu 12 -->
+<div class="question" id="q12">
+  <label><b>Câu 12:</b> Vay ngắn hạn 20.000.000đ để trả nợ người bán:</label>
+  <textarea id="answer12" placeholder="Mỗi dòng 1 công thức..."></textarea>
+  <button onclick="checkAnswer('12')">Kiểm tra</button>
+  <div id="result12"></div>
+</div>
+<!-- Câu 13 -->
+<div class="question" id="q13">
+  <label><b>Câu 13:</b> Mua công cụ dụng cụ nhập kho trị giá 2.000.000đ trả bằng tiền mặt:</label>
+  <textarea id="answer13" placeholder="Mỗi dòng 1 công thức..."></textarea>
+  <button onclick="checkAnswer('13')">Kiểm tra</button>
+  <div id="result13"></div>
+</div>
+
+<!-- Câu 14 -->
+<div class="question" id="q14">
+  <label><b>Câu 14:</b> Dùng lợi nhuận bổ sung quỹ đầu tư phát triển 50.000.000đ:</label>
+  <textarea id="answer14" placeholder="Mỗi dòng 1 công thức..."></textarea>
+  <button onclick="checkAnswer('14')">Kiểm tra</button>
+  <div id="result14"></div>
+</div>
+<!-- Câu 15 -->
+<div class="question" id="q15">
+  <label><b>Câu 15:</b> Khách hàng trả nợ 144.000.000đ, trong đó tiền mặt là 14.000.000đ và chuyển khoản 130.000.000đ:</label>
+  <textarea id="answer15" placeholder="Mỗi dòng 1 công thức..."></textarea>
+  <button onclick="checkAnswer('15')">Kiểm tra</button>
+  <div id="result15"></div>
+</div>
+<!-- Câu 16 -->
+<div class="question" id="q16">
+  <label><b>Câu 16:</b> Mua hàng hóa về nhập kho trị giá 40.000.000đ, thuế giá trị gia tăng 4.000.000đ, thanh toán trực tiếp bằng tiền mặt:</label>
+  <textarea id="answer16" placeholder="Mỗi dòng 1 công thức..."></textarea>
+  <button onclick="checkAnswer('16')">Kiểm tra</button>
+  <div id="result16"></div>
+</div>
+<!-- Câu 17 -->
+<div class="question" id="q17">
+  <label><b>Câu 17:</b> Doanh thu bán hàng hóa trong tháng là 800.000.000đ, thuế giá trị gia tăng là 80.000.000đ. Trong đó thu bằng tiền mặt là 280.000.000đ và thu bằng tiền gửi ngân hàng là 600.000.000đ:</label>
+  <textarea id="answer17" placeholder="Mỗi dòng 1 công thức..."></textarea>
+  <button onclick="checkAnswer('17')">Kiểm tra</button>
+  <div id="result17"></div>
+</div>
+<!-- Câu 18 -->
+<div class="question" id="q18">
+  <label><b>Câu 18:</b> Mua một tài sản cố định hữu hình giá mua chưa thuế 72.000.000đ, thuế GTGT 10%, chưa trả tiền người bán. :</label>
+  <textarea id="answer18" placeholder="Mỗi dòng 1 công thức..."></textarea>
+  <button onclick="checkAnswer('18')">Kiểm tra</button>
+  <div id="result18"></div>
+</div>
+<!-- Câu 19 -->
+<div class="question" id="q19">
+  <label><b>Câu 19:</b> Nhận góp vốn liên doanh bằng tiền mặt 180.000.000đ và một thiết bị được Hội đồng thẩm định giá trị là 200.000.000đ. :</label>
+  <textarea id="answer19" placeholder="Mỗi dòng 1 công thức..."></textarea>
+  <button onclick="checkAnswer('19')">Kiểm tra</button>
+  <div id="result19"></div>
+</div>
+<!-- Câu 20 -->
+<div class="question" id="q20">
+  <label><b>Câu 20:</b> Tiền lương phải trả cho nhân viên bán hàng là 67.500.000đ, nhân viên quản lý là 41.300.000đ. :</label>
+  <textarea id="answer20" placeholder="Mỗi dòng 1 công thức..."></textarea>
+  <button onclick="checkAnswer('20')">Kiểm tra</button>
+  <div id="result20"></div>
+</div>
+<!-- Câu 21 -->
+<div class="question" id="q21">
+  <label><b>Câu 21:</b> Chi tiền mặt tạm ứng lương cho nhân viên 45.700.000đ  :</label>
+  <textarea id="answer21" placeholder="Mỗi dòng 1 công thức..."></textarea>
+  <button onclick="checkAnswer('21')">Kiểm tra</button>
+  <div id="result21"></div>
+</div>
+
+<!-- Câu 22 -->
+<div class="question" id="q22">
+  <label><b>Câu 22:</b> Nhân viên nộp lại quỹ số tiền tạm ứng thừa 3.000.000đ</label>
+  <textarea id="answer22" placeholder="Mỗi dòng 1 công thức..."></textarea>
+  <button onclick="checkAnswer('22')">Kiểm tra</button>
+  <div id="result22"></div>
+</div>
+
+<!-- Câu 23 -->
+<div class="question" id="q23">
+  <label><b>Câu 23:</b> Khách hàng chuyển khoản trả nợ 68.000.000đ</label>
+  <textarea id="answer23" placeholder="Mỗi dòng 1 công thức..."></textarea>
+  <button onclick="checkAnswer('23')">Kiểm tra</button>
+  <div id="result23"></div>
+</div>
+<!-- Câu 24 -->
+<div class="question" id="q24">
+  <label><b>Câu 20:</b> Tạm ứng cho nhân viên đi công tác bằng tiền mặt 3.000.000đ</label>
+  <textarea id="answer24" placeholder="Mỗi dòng 1 công thức..."></textarea>
+  <button onclick="checkAnswer('24')">Kiểm tra</button>
+  <div id="result24"></div>
+</div>
+
+<!-- Câu 25 -->
+<div class="question" id="q25">
+  <label><b>Câu 25:</b> Chuyển khoản trả lương cho nhân viên trong tháng 80.000.000đ</label>
+  <textarea id="answer25" placeholder="Mỗi dòng 1 công thức..."></textarea>
+  <button onclick="checkAnswer('25')">Kiểm tra</button>
+  <div id="result25"></div>
+</div>
+
+<!-- Câu 26 -->
+<div class="question" id="q26">
+  <label><b>Câu 26:</b> Trả lãi vay ngân hàng bằng tiền mặt 12.000.000đ</label>
+  <textarea id="answer26" placeholder="Mỗi dòng 1 công thức..."></textarea>
+  <button onclick="checkAnswer('26')">Kiểm tra</button>
+  <div id="result26"></div>
+</div>
+
+<!-- Câu 27 -->
+<div class="question" id="q27">
+  <label><b>Câu 27:</b> Vay ngân hàng số tiền 80.000.000đ, đã nhận tiền mặt 10.000.000đ, còn lại được chuyển khoản</label>
+  <textarea id="answer27" placeholder="Mỗi dòng 1 công thức..."></textarea>
+  <button onclick="checkAnswer('27')">Kiểm tra</button>
+  <div id="result27"></div>
+</div>
+
+<!-- Câu 28 -->
+<div class="question" id="q28">
+  <label><b>Câu 28:</b> Trích lợi nhuận bổ sung quỹ khen thưởng phúc lợi 35.000.000đ</label>
+  <textarea id="answer28" placeholder="Mỗi dòng 1 công thức..."></textarea>
+  <button onclick="checkAnswer('28')">Kiểm tra</button>
+  <div id="result28"></div>
+</div>
+
+<!-- Câu 29 -->
+<div class="question" id="q29">
+  <label><b>Câu 29:</b> Bán hàng chưa thu tiền trị giá 25.000.000đ, thuế giá trị gia tăng 10%</label>
+  <textarea id="answer29" placeholder="Mỗi dòng 1 công thức..."></textarea>
+  <button onclick="checkAnswer('29')">Kiểm tra</button>
+  <div id="result29"></div>
+</div>
+
+<!-- Câu 30 -->
+<div class="question" id="q30">
+  <label><b>Câu 30:</b> Chi tiền mặt vận chuyển hàng hóa đi bán 300.000đ</label>
+  <textarea id="answer30" placeholder="Mỗi dòng 1 công thức..."></textarea>
+  <button onclick="checkAnswer('30')">Kiểm tra</button>
+  <div id="result30"></div>
+</div>
+
+
+
+<script>
+  const correctAnswers = {
+    "1": [
+      ["Nợ TK 111: 10.000.000", "Nợ 111: 10.000.000", "NỢ 111: 10000000","Nợ TK 111: 10000000", "Có TK 112: 10.000.000", "Có 112: 10.000.000", "CÓ 112: 10000000","Có TK 112: 10000000"],
+      ["Có TK 112: 10.000.000", "Có 112: 10.000.000", "CÓ 112: 10000000","Có TK 112: 10000000","Nợ TK 111: 10.000.000", "Nợ 111: 10.000.000", "NỢ 111: 10000000","Nợ TK 111: 10000000"]
+          ],
+    "2": [
+      ["Nợ TK 334: 15.000.000", "Nợ TK 334: 15000000", " NỢ 334: 15.000.000"," NỢ 334: 15000000","Có TK 111: 15.000.000", "CÓ TK 111: 15000000", " CÓ 111: 15.000.000"," CÓ 111: 15000000"],
+      ["Có TK 111: 15.000.000", "CÓ TK 111: 15000000", " CÓ 111: 15.000.000"," CÓ 111: 15000000","Nợ TK 334: 15.000.000", "Nợ TK 334: 15000000", " NỢ 334: 15.000.000"," NỢ 334: 15000000"] 
+      
+    ],
+    "3": [
+      ["Nợ TK 152: 5.000.000", "Nợ 152: 5000000", "NỢ 152: 5.000.000",  "NỢ TK 152: 5000000","Có TK 111: 5.000.000", "Có 111: 5000000", " CÓ TK 111: 5000000"," CÓ 111: 5.000.000"],
+      ["Có TK 111: 5.000.000", "Có 111: 5000000", " CÓ TK 111: 5000000"," CÓ 111: 5.000.000","Nợ TK 152: 5.000.000", "Nợ 152: 5000000", "NỢ 152: 5.000.000",  "NỢ TK 152: 5000000"]
+    ],
+"4": [
+      ["Nợ TK 111: 25.000.000",
+"Có TK 511: 25.000.000",
+"NỢ TK 111: 25.000.000",
+"CÓ TK 511: 25.000.000",
+"Nợ 111: 25.000.000",
+"Có 511: 25.000.000",
+"NỢ 111: 25.000.000",
+"CÓ 511: 25.000.000"
+
+],
+      ["Nợ TK 111: 25.000.000",
+"Có TK 511: 25.000.000",
+"NỢ TK 111: 25.000.000",
+"CÓ TK 511: 25.000.000",
+"Nợ 111: 25.000.000",
+"Có 511: 25.000.000",
+"NỢ 111: 25.000.000",
+"CÓ 511: 25.000.000"]
+          ],
+"5": [
+      ["Nợ TK 331: 10.000.000",
+"Có TK 111: 10.000.000",
+"NỢ TK 331: 10.000.000",
+"CÓ TK 111: 10.000.000",
+"Nợ 331: 10.000.000",
+"Có 111: 10.000.000",
+"NỢ 331: 10.000.000",
+"CÓ 111: 10.000.000"
+],
+      ["Nợ TK 331: 10.000.000",
+"Có TK 111: 10.000.000",
+"NỢ TK 331: 10.000.000",
+"CÓ TK 111: 10.000.000",
+"Nợ 331: 10.000.000",
+"Có 111: 10.000.000",
+"NỢ 331: 10.000.000",
+"CÓ 111: 10.000.000"]
+          ],
+
+"6": [
+      ["Nợ TK 111: 8.000.000",
+"Có TK 131: 8.000.000",
+"NỢ TK 111: 8.000.000",
+"CÓ TK 131: 8.000.000",
+"Nợ 111: 8.000.000",
+"Có 131: 8.000.000",
+"NỢ 111: 8.000.000",
+"CÓ 131: 8.000.000"],
+      ["Nợ TK 111: 8.000.000",
+"Có TK 131: 8.000.000",
+"NỢ TK 111: 8.000.000",
+"CÓ TK 131: 8.000.000",
+"Nợ 111: 8.000.000",
+"Có 131: 8.000.000",
+"NỢ 111: 8.000.000",
+"CÓ 131: 8.000.000"]
+          ],
+ "7": [
+      ["Nợ TK 341: 24.000.000",
+"Có TK 111: 24.000.000",
+"NỢ TK 341: 24.000.000",
+"CÓ TK 111: 24.000.000",
+"Nợ 341: 24.000.000",
+"Có 111: 24.000.000",
+"NỢ 341: 34.000.000",
+"CÓ 111: 34.000.000"
+],
+      ["Nợ TK 341: 24.000.000",
+"Có TK 111: 24.000.000",
+"NỢ TK 341: 24.000.000",
+"CÓ TK 111: 24.000.000",
+"Nợ 341: 24.000.000",
+"Có 111: 24.000.000",
+"NỢ 341: 34.000.000",
+"CÓ 111: 34.000.000"
+]
+          ],
+ "8": [
+      ["Nợ TK 112: 10.000.000",
+"Có TK 131: 10.000.000",
+"NỢ TK 112: 10.000.000",
+"CÓ TK 131: 10.000.000",
+"Nợ 112: 10.000.000",
+"Có 131: 10.000.000",
+"NỢ 112: 10.000.000",
+"CÓ 131: 10.000.000"
+],
+      ["Nợ TK 112: 10.000.000",
+"Có TK 131: 10.000.000",
+"NỢ TK 112: 10.000.000",
+"CÓ TK 131: 10.000.000",
+"Nợ 112: 10.000.000",
+"Có 131: 10.000.000",
+"NỢ 112: 10.000.000",
+"CÓ 131: 10.000.000"
+]
+          ],
+ "9": [
+      ["Nợ TK 211: 32.000.000",
+"Có TK 411: 32.000.000",
+"NỢ TK 211: 32.000.000",
+"CÓ TK 411: 32.000.000",
+"Nợ 211: 32.000.000",
+"Có 411: 32.000.000",
+"NỢ 211: 32.000.000",
+"CÓ 411: 32.000.000"
+],
+      ["Nợ TK 211: 32.000.000",
+"Có TK 411: 32.000.000",
+"NỢ TK 211: 32.000.000",
+"CÓ TK 411: 32.000.000",
+"Nợ 211: 32.000.000",
+"Có 411: 32.000.000",
+"NỢ 211: 32.000.000",
+"CÓ 411: 32.000.000"
+]
+          ],
+ "10": [
+      ["Nợ TK 141: 5.000.000", "NỢ TK 141: 5.000.000","Nợ 141: 5.000.000","NỢ 141: 5.000.000"
+],
+      ["Có TK 111: 5.000.000", "CÓ TK 111: 5.000.000","Có 111: 5.000.000","CÓ 111: 5.000.000"
+]
+          ],
+"11": [
+      ["Nợ TK 156: 20.000.000","NỢ TK 156: 20.000.000","Nợ 156: 20.000.000","NỢ 156: 20.000.000"
+],
+      ["Có TK 331: 20.000.000","CÓ TK 331: 20.000.000","Có 331: 20.000.000","CÓ 331: 20.000.000"]
+          ],
+"12": [
+      ["Nợ TK 331: 20.000.000","NỢ TK 331: 20.000.000","Nợ 331: 20.000.000","NỢ 331: 20.000.000"
+
+],
+      ["Có TK 341: 20.000.000","CÓ TK 341: 20.000.000","Có 341: 20.000.000","CÓ 341: 20.000.000"
+]
+          ],
+"13": [
+      ["Nợ TK 153: 2.000.000",
+"NỢ TK 153: 2.000.000",
+"Nợ 153: 2.000.000",
+"NỢ 153: 2.000.000"
+
+
+],
+      ["Có TK 111: 2.000.000",
+"CÓ TK 111: 2.000.000",
+"Có 111: 2.000.000",
+"CÓ 111: 2.000.000"
+
+]
+          ],
+"14": [
+      ["Nợ TK 421: 50.000.000",
+"NỢ TK 421: 50.000.000",
+"Nợ 421: 50.000.000",
+"NỢ 421: 50.000.000"
+],
+      ["Có TK 414: 50.000.000",
+"CÓ TK 414: 50.000.000",
+"Có 414: 50.000.000",
+"CÓ 414: 50.000.000"
+]
+          ],
+"15": [
+      ["Nợ TK 111: 14.000.000",
+"NỢ TK 111: 14.000.000",
+"Nợ 111: 14.000.000",
+"NỢ 111: 14.000.000"
+
+],
+["Nợ TK 112: 130.000.000",
+"NỢ TK 112: 130.000.000",
+"Nợ 112: 130.000.000",
+"NỢ 112: 130.000.000"
+
+
+],
+
+      ["Có TK 131: 144.000.000",
+"CÓ TK 131: 144.000.000",
+"Có 131: 144.000.000",
+"CÓ 131: 144.000.000"
+
+]
+          ],
+"16": [
+      ["Nợ TK 156: 40.000.000","NỢ TK 156: 40.000.000","Nợ 156: 40.000.000","NỢ 156: 40.000.000"
+
+
+],
+["Nợ TK 133: 4.000.000","NỢ TK 133: 4.000.000","Nợ 133: 4.000.000","NỢ 133: 4.000.000"
+
+
+
+],
+
+      ["Có TK 111: 44.000.000","CÓ TK 111: 44.000.000","Có 111: 44.000.000","CÓ 111: 44.000.000"
+
+
+]
+          ],
+"17": [
+      ["Nợ TK 111: 280.000.000","NỢ TK 111: 280.000.000","Nợ 111: 280.000.000","NỢ 111: 280.000.000"
+
+
+
+],
+["Nợ TK 112: 600.000.000","NỢ TK 112: 600.000.000","Nợ 112: 600.000.000","NỢ 112: 600.000.000"
+
+
+
+
+],
+
+      ["Có TK 511: 800.000.000","CÓ TK 511: 800.000.000","Có 511: 800.000.000","CÓ 511: 800.000.000"
+
+
+
+],
+["Có TK 333: 80.000.000","CÓ TK 333: 80.000.000","Có 333: 80.000.000","CÓ 333: 80.000.000"
+
+],
+
+          ],
+"18": [
+      ["Nợ TK 211: 72.000.000","Nợ 211: 72.000.000","NỢ TK 211: 72.000.000","NỢ 211: 72.000.000"
+
+
+
+],
+["Nợ TK 133: 7.200.000","Nợ 133: 7.200.000","NỢ TK 133: 7.200.000","NỢ 133: 7.200.000"
+
+
+
+
+],
+
+      ["Có TK 331: 79.200.000","Có 331: 79.200.000","CÓ TK 331: 79.200.000","CÓ 331: 79.200.000"
+
+
+
+]
+          ],
+"19": [
+      ["Nợ TK 111: 180.000.000","NỢ TK 111: 180.000.000","Nợ 111: 180.000.000","NỢ 111: 180.000.000"
+],
+["Nợ TK 211: 200.000.000","NỢ TK 211: 200.000.000","Nợ 211: 200.000.000","NỢ 211: 200.000.000"
+
+],
+
+      ["Có TK 411: 380.000.000","CÓ TK 411: 380.000.000","Có 411: 380.000.000","CÓ 411: 380.000.000"
+]
+          ],
+"20": [
+      ["Nợ TK 641: 67.500.000","NỢ TK 641: 67.500.000","Nợ 641: 67.500.000","NỢ 641: 67.500.000"
+],
+["Nợ TK 642: 41.300.000","NỢ TK 642: 41.300.000","Nợ 642: 41.300.000","NỢ 642: 41.300.000"
+
+],
+
+      ["Có TK 334: 108.800.000","CÓ TK 334: 108.800.000","Có 334: 108.800.000","CÓ 334: 108.800.000"
+
+]
+          ],
+"21": [
+      ["Nợ TK 334: 45.700.000","NỢ TK 334: 45.700.000","Nợ 334: 45.700.000","NỢ 334: 45.700.000"
+
+],
+      ["Có TK 111: 45.700.000","CÓ TK 111: 45.700.000","Có 111: 45.700.000","CÓ 111: 45.700.000"
+
+]
+          ],
+"22": [
+      ["Nợ TK 111: 3.000.000","NỢ TK 111: 3.000.000","Nợ 111: 3.000.000","NỢ 111: 3.000.000"
+
+
+],
+      ["Có TK 141: 3.000.000","CÓ TK 141: 3.000.000","Có 141: 3.000.000","CÓ 141: 3.000.000"
+
+
+]
+          ],
+"23": [
+      ["Nợ TK 112: 68.000.000","NỢ TK 112: 68.000.000","Nợ 112: 68.000.000","NỢ 112: 68.000.000"
+
+
+
+],
+      ["Có TK 131: 68.000.000","CÓ TK 131: 68.000.000","Có 131: 68.000.000","CÓ 131: 68.000.000"
+
+
+
+]
+          ],
+"24": [
+      ["Nợ TK 141: 3.000.000","NỢ TK 141: 3.000.000","Nợ 141: 3.000.000","NỢ 141: 3.000.000"
+],
+      ["Có TK 111: 3.000.000","CÓ TK 111: 3.000.000","Có 111: 3.000.000","CÓ 111: 3.000.000"
+]
+          ],
+"25": [
+      ["Nợ TK 334: 80.000.000","NỢ TK 334: 80.000.000","Nợ 334: 80.000.000","NỢ 334: 80.000.000"
+
+],
+      ["Có TK 112: 80.000.000","CÓ TK 112: 80.000.000","Có 112: 80.000.000","CÓ 112: 80.000.000"
+
+]
+          ],
+"26": [
+      ["Nợ TK 635: 12.000.000","NỢ TK 635: 12.000.000","Nợ 635: 12.000.000","NỢ 635: 12.000.000"
+],
+      ["Có TK 111: 12.000.000","CÓ TK 111: 12.000.000","Có 111: 12.000.000","CÓ 111: 12.000.000"
+]
+          ],
+"27": [
+      ["Nợ TK 111: 10.000.000","NỢ TK 111: 10.000.000","Nợ 111: 10.000.000","NỢ 111: 10.000.000"
+
+],
+["Nợ TK 112: 70.000.000","NỢ TK 112: 70.000.000","Nợ 112: 70.000.000","NỢ 112: 70.000.000"
+
+
+],
+
+      ["Có TK 341: 80.000.000","CÓ TK 341: 80.000.000","Có 341: 80.000.000","CÓ 341: 80.000.000"
+
+]
+          ],
+"28": [
+      ["Nợ TK 421: 35.000.000","NỢ TK 421: 35.000.000","Nợ 421: 35.000.000","NỢ 421: 35.000.000"
+
+],
+      ["Có TK 353: 35.000.000","CÓ TK 353: 35.000.000","Có 353: 35.000.000","CÓ 353: 35.000.000"
+]
+          ],
+"29": [
+      ["Nợ TK 131: 27.500.000"
+
+],
+["Có TK 511: 25.000.000"
+
+
+],
+
+      ["Có TK 333: 2.500.000"
+
+]
+          ],
+"30": [
+      ["Nợ TK 641: 300.000","NỢ TK 641: 300.000","Nợ 641: 300.000","NỢ 641: 300.000"
+
+
+],
+      ["Có TK 111: 300.000","CÓ TK 111: 300.000","Có 111: 300.000","CÓ 111: 300.000"
+
+]
+          ],
+
+  };
+
+  function normalize(str) {
+  return str.trim().toLowerCase().replace(/\s+/g, ' ');
+}
+
+function checkAnswer(qid) {
+  const input = document.getElementById("answer" + qid).value.trim();
+  const lines = input.split('\n').map(line => normalize(line));
+  const expected = correctAnswers[qid];
+  const resultDiv = document.getElementById("result" + qid);
+  resultDiv.innerHTML = "";
+  let correctCount = 0;
+
+  for (let i = 0; i < expected.length; i++) {
+    const userLine = lines[i] || "";
+    const correctSet = expected[i];
+    const isCorrect = correctSet.some(ans => normalize(ans) === userLine);
+    const resultLine = document.createElement("div");
+    resultLine.className = "result-line " + (isCorrect ? "correct" : "incorrect");
+    resultLine.textContent = `Dòng ${i + 1}: ${userLine || "[Trống]"} → ${isCorrect ? "✔ Đúng" : "✘ Sai"}`;
+    resultDiv.appendChild(resultLine);
+    
+  }
+
+  if (lines.length < expected.length) {
+    const warn = document.createElement("div");
+    warn.className = "warning";
+    warn.textContent = `⚠ Cần ít nhất ${expected.length} dòng.`;
+    resultDiv.appendChild(warn);
+  }
+  }
+</script>
+
+</body>
+</html>
